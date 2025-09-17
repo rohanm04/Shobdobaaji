@@ -396,8 +396,9 @@ body.dark .btn:hover {
     width: 150px;
   }
 
-  .container-70 {
+  .container-70, .container {
     width: 100%;
     padding: 10px;
   }
 }
+
