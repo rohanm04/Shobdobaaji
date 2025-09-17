@@ -400,5 +400,7 @@ body.dark .btn:hover {
     width: 100%;
     padding: 10px;
   }
-}
 
+  .featured {
+    padding: 10px;
+}
