@@ -32,7 +32,7 @@ img:hover {
 }
 
 .img-large {
-  width: 300px;
+  width: 250px;
   border-radius: 50%;
   border: 2px solid black;
   transition: none;
@@ -125,21 +125,18 @@ nav a.active {
 }
 
 .container {
-  width: 70%;
-  margin: 0 auto;
   padding: 20px;
 }
 
 .card {
   background: #fcfcfc;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   transition: all 0.5s;
 }
 
 h1 {
+  text-align: center;
   font-size: 30px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 20px;
@@ -160,7 +157,6 @@ h1 {
 
 .featured {
   padding: 20px;
-  border-radius: 8px;
   background: #f0f0f0;
   margin-bottom: 15px;
 }
@@ -195,14 +191,12 @@ h1 {
 
 .item {
   padding: 14px;
-  border-radius: 8px;
   background: #f0f0f0;
   transition: all 0.5s;
 }
 
 .item-light {
   padding: 14px;
-  border-radius: 8px;
   background: #fcfcfc;
   transition: all 0.5s;
 }
@@ -261,11 +255,17 @@ h1 {
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 100px;
 }
 
 .col {
   text-align: justify;
+}
+
+.container-70 {
+  width: 70%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Dark mode */
@@ -330,28 +330,17 @@ body.dark .btn:hover {
 
 /* Responsive design */
 @media (max-width: 1250px) {
-  .container {
-    width: 80%;
-  }
-
-  .small {
-    width: 100%;
-  }
-
   .flex-cols {
     flex-direction: column;
+    gap: 30px;
+  }
+
+  .container-70 {
+    width: 80%;
   }
 }
 
 @media (max-width: 750px) {
-  .container {
-    width: 90%;
-  }
-
-  .small {
-    width: 100%;
-  }
-
   .ham {
     display: flex;
     flex-direction: column;
@@ -378,7 +367,11 @@ body.dark .btn:hover {
   }
 
   .img-large {
-    width: 200px;
+    width: 175px;
+  }
+
+  .container-70 {
+    width: 90%;
   }
 }
 
@@ -401,5 +394,10 @@ body.dark .btn:hover {
 
   .img-large {
     width: 150px;
+  }
+
+  .container-70 {
+    width: 100%;
+    padding: 10px;
   }
 }
